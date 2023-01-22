@@ -6,135 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!--CSS e Bootstrap-->
+    <!--Bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!--CSS personalizado-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
     <title>Calculadora de prazo</title>
   </head>
   <body>
-    <!--Menu start-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+    <div class="container_th">
+      <!--Menu start-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CALCULAR O PRAZO</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </div>
-    </nav>
-    <!--Menu end-->
-    <!--Formulário start-->
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" />
-      </div>
-      <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" />
-      </div>
-      <div class="col-12">
-        <label for="inputAddress" class="form-label">Address</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress"
-          placeholder="1234 Main St"
-        />
-      </div>
-      <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address 2</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress2"
-          placeholder="Apartment, studio, or floor"
-        />
-      </div>
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="inputCity" />
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="inputZip" />
-      </div>
-      <div class="col-12">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
-        </div>
-      </div>
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </div>
-    </form>
-    <!--Formulário end-->
+      </nav>
+      <!--Menu end-->
 
+      <!--Formulário start-->
+      <form class="row g-3">
+        <!--Serviço-->
+        <div class="col-sm-6">
+          <label class="form-label">Serviço</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Digite o nome do serviço . . ."
+          />
+        </div>
+        <!--Quantidade do serviço-->
+        <div class="col-sm-3">
+          <label class="form-label">Quantidade</label>
+          <input type="number" class="form-control" />
+        </div>
+        <!--Unidade do serviço-->
+        <div class="col-sm-1">
+          <label class="form-label">Unidade</label>
+          <input type="text" class="form-control" />
+        </div>
+        <!--Produtividade-->
+        <div class="col-sm-3">
+          <label class="form-label">Produtividade</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Serviço por hora (unid/hh) . . ."
+          />
+        </div>
+        <!--Unidade da produtividade-->
+        <div class="col-sm-1">
+          <label class="form-label">Unidade</label>
+          <input type="text" class="form-control" />
+        </div>
+        <!--Dando opção-->
+        <div class="col-sm-1">
+          <h4>ou</h4>
+        </div>
+        <!--Índice-->
+        <div class="col-sm-3">
+          <label for="inputAddress2" class="form-label">Índice</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="hh por serviço (hh/unid) . . ."
+          />
+        </div>
+        <!--Unidade do índice-->
+        <div class="col-sm-1">
+          <label for="inputCity" class="form-label">Unidade</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <!--Qde de funcionários-->
+        <div class="col-md-4">
+          <label class="form-label">Quantidade de funcionários</label>
+          <input type="text" class="form-control" />
+        </div>
+        <!--Botão check in-->
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label" for="gridCheck">
+              Com auiliar
+            </label>
+          </div>
+        </div>
+        <!--Botão calcular-->
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Calcular</button>
+        </div>
+        <!--Total em dias-->
+        <div class="col-md-2">
+          <label class="form-label">Total em dias</label>
+          <input type="text" class="form-control" />
+        </div>
+      </form>
+      <!--Formulário end-->...
+    </div>
+
+    <!--js do bootstrap-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
