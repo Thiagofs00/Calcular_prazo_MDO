@@ -1,2 +1,3 @@
 # Calcular_prazo_MDO
-Created with CodeSandbox
+
+Auxilia o engenheiro civil a calcular a duração de um serviço.
