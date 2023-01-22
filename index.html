@@ -40,9 +40,9 @@
       <!--Menu end-->
 
       <!--Formulário start-->
-      <form class="row g-3">
+      <form class="row g-2">
         <!--Serviço-->
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <label class="form-label">Serviço</label>
           <input
             type="text"
@@ -50,8 +50,10 @@
             placeholder="Digite o nome do serviço . . ."
           />
         </div>
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
         <!--Quantidade do serviço-->
-        <div class="col-sm-3">
+        <div class="col-md-3">
           <label class="form-label">Quantidade</label>
           <input type="number" class="form-control" />
         </div>
@@ -60,14 +62,12 @@
           <label class="form-label">Unidade</label>
           <input type="text" class="form-control" />
         </div>
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
         <!--Produtividade-->
-        <div class="col-sm-3">
+        <div class="col-md-2">
           <label class="form-label">Produtividade</label>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Serviço por hora (unid/hh) . . ."
-          />
+          <input type="text" class="form-control" placeholder="unid/hh . . ." />
         </div>
         <!--Unidade da produtividade-->
         <div class="col-sm-1">
@@ -75,26 +75,23 @@
           <input type="text" class="form-control" />
         </div>
         <!--Dando opção-->
-        <div class="col-sm-1">
-          <h4>ou</h4>
+        <div class="d-flex align-items-center">
+          <h6>ou</h6>
         </div>
         <!--Índice-->
-        <div class="col-sm-3">
+        <div class="col-md-2">
           <label for="inputAddress2" class="form-label">Índice</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputAddress2"
-            placeholder="hh por serviço (hh/unid) . . ."
-          />
+          <input type="text" class="form-control" placeholder="hh/unid . . ." />
         </div>
         <!--Unidade do índice-->
         <div class="col-sm-1">
           <label for="inputCity" class="form-label">Unidade</label>
           <input type="text" class="form-control" id="inputCity" />
         </div>
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
         <!--Qde de funcionários-->
-        <div class="col-md-4">
+        <div class="col-md-2">
           <label class="form-label">Quantidade de funcionários</label>
           <input type="text" class="form-control" />
         </div>
